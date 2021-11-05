@@ -7,16 +7,48 @@ export default function Home() {
         {new Array(36).fill('').map((k, i) => (
           <ion-col key={i} size="4">
             <ion-card>
-              <Image
-                src="/cat.jpg"
-                alt="Picture of the author"
-                width={600}
-                height={600}
-              />
               <ion-card-header>
-                <ion-card-subtitle>Destination</ion-card-subtitle>
-                <ion-card-title>Madison, WI</ion-card-title>
+                <ion-grid>
+                  <ion-row>
+                    <ion-col size="2">
+                      <ion-chip color="primary">
+                        <ion-avatar>
+                        <img
+                          src="https://http2.mlstatic.com/D_NQ_NP_819213-MCO45776534809_042021-O.webp"
+                          alt="Picture of the author"
+                          max-width={50}
+                          max-height={50}
+                        />
+                        </ion-avatar>
+                        &nbsp;&nbsp;&nbsp;
+                        </ion-chip>
+                    </ion-col>
+                    <ion-col size="8">
+                      <ion-card-title>Nombre del Proyecto</ion-card-title>
+                      <ion-card-subtitle>Miguel Ángel Páez Parra</ion-card-subtitle>
+                    </ion-col>
+                    <ion-col size="2">
+                      <ion-button color="light">
+                        <ion-icon name="exit-outline"></ion-icon>
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+
+                  <div>
+                  <ion-card-title></ion-card-title>
+                  </div>
+                  <div>
+                  
+                  </div>
               </ion-card-header>
+              <img
+                src="https://http2.mlstatic.com/D_NQ_NP_819213-MCO45776534809_042021-O.webp"
+                alt="Picture of the author"
+                width={ 400}
+                height={400}
+              />
+              
               <ion-card-content>
                 <ion-icon name="pin" slot="start"></ion-icon>
                 Keep close to Nature's heart... and break clear away, once in
